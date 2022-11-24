@@ -60,7 +60,7 @@ def Myrecommend():
 	Theta = np.random.rand(mynu,mynf)
 	myflat = flattenParams(X, Theta)
 	mylambda = 12.2
-	result = scipy.optimize.fmin_cg(cofiCostFunc,x0=myflat,fprime=cofiGrad,args=(Y,R,mynu,mynm,mynf,mylambda),maxiter=40,disp=True,full_output=True)
+	result = scipy.optimize.fmin_cg(cofiCostFunc,x0=myflat,fprime=cofiGrad,args=(Y,R,mynu,mynm,mynf,mylambda),maxiter=60,disp=True,full_output=True)
 	resX, resTheta = reshapeParams(result[0], mynm, mynu, mynf)
 	prediction_matrix = resX.dot(resTheta.T)
 	return prediction_matrix,Ymean
