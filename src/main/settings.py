@@ -26,7 +26,13 @@ SECRET_KEY = '5u$a%1-m#+jh4k^pb%*ut#24zhwxdv@)ks3=tg7sz9&7)&dr^j'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '*',
+    '0.0.0.0',
+    'http://cryptic-woodland-59530.herokuapp.com',
+    'https://cryptic-woodland-59530.herokuapp.com',
+    '127.0.0.1'
+]
 
 
 # Application definition
