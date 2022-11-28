@@ -8,17 +8,12 @@
 .navbar-nav>li>a{
 	font-size: 18px;
 }
-.navbar-brand{
-	font-size: 22px;
-	font-family: inherit;
-	font-style: italic;
-	font-weight: 700;
-}
+
 .navbar-inverse .navbar-brand{
 	color:#00bcd4;
 }
 .navbar-inverse .navbar-nav>li>a{
-		color: #00bcd4;	
+		color: #d400a2;	
 }
 h2{
 	margin-left: 20px;
@@ -52,6 +47,13 @@ html, body {
     height: 155px; /* .push must be the same height as .footer */
 }
 
+
+.btn-primary, .btn-primary:hover {
+    background-color: #ab7a9d !important;
+}
+.btn-sm {
+    background-color: #8064A2 !important;
+}
 /*.row.display-flex {
   display: flex;
   flex-wrap: wrap;
