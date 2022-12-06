@@ -34,8 +34,13 @@ def recommend(request):
 	pred_idxs_sorted[:] = pred_idxs_sorted[::-1]
 	pred_idxs_sorted=pred_idxs_sorted+1
 	print(pred_idxs_sorted)
-	preserved = Case(*[When(pk=pk, then=pos) for pos, pk in enumerate(pred_idxs_sorted)])
-	movie_list=list(Movie.objects.filter(id__in = pred_idxs_sorted,).order_by(preserved)[:10])
+	pred_lab = pred_idxs_sorted[:300]
+	print("hahahhahaha")
+	preserved = Case(*[When(pk=pk, then=pos) for pos, pk in enumerate(pred_lab)])
+	print("test")
+	
+	movie_list=list(Movie.objects.filter(id__in = pred_lab,).order_by(preserved)[:48])
+	print("abc")
 	return render(request,'web/recommend.html',{'movie_list':movie_list})
 
 
