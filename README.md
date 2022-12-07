@@ -13,7 +13,7 @@ Web demo: https://movie-recommender.onrender.com/
 ###### Rating page
 ![rate](https://user-images.githubusercontent.com/20842692/45380186-be6f3280-b61f-11e8-8ad6-8b967d1cba1a.png)
 
-###### Technologies Used
+##### Technologies Used
 
  Web Technologies
  + Html , Css , JavaScript , Bootstrap , Django
