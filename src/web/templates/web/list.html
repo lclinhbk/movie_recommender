@@ -45,7 +45,7 @@
                     <div class="thumbnail">
                         <h4>{{movie.title}}</h4>
                         <a href="{% url 'detail' movie.id %}">
-                            <img src="{{ movie.movie_logo}}" class="img-responsive"  style="width:182px;height:268px;">
+                            <img src="{{ movie.movie_logo}}" class="img-responsive"  style="width:182px;height:268px;" onerror="this.src='https://icon-library.com/images/not-found-icon/not-found-icon-6.jpg'" alt="movie-poster">
                         </a>
                         <h5>{{movie.genre}}</h5>
                         <div class="caption">
