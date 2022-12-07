@@ -1,6 +1,7 @@
 # Movie-Recommender-System
 A Web Base user-item Movie Recommendation Engine using Collaborative Filtering By matrix factorizations algorithm and
 The recommendation based on the underlying idea that is if two persons both liked certian common movies,then the movies that one person has liked that the other person has not yet watched can be recommended to him.   
+Web demo: https://movie-recommender.onrender.com/
 ### Screenshot
 
 ###### Home page
@@ -42,12 +43,12 @@ Goto that Path
 Example
 
 ```
-cd ~/Destop/Movie-Recommender-System
+cd ~/Destop/movie_recommender
 ```
 Create a new virtual environment on that directory
 
 ```
-virtualenv .
+virtualenv venv
 ```
 
 Activate Your Virtual Environment
@@ -56,7 +57,7 @@ for Linux
 ```
 source bin/activate
 ```
-for Windows
+for Windows: source venv/Scripts/activate
 ```
 cd Scripts
 then
@@ -73,7 +74,7 @@ pip install -r requirements.txt
 Goto src directory, example
 
 ```
-cd ../Movie-Recommender-System/src
+cd ../movie_recommender/src
 ```
 To run
 ```
