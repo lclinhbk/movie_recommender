@@ -8,6 +8,12 @@
 .navbar-nav>li>a{
 	font-size: 18px;
 }
+.navbar-brand{
+	font-size: 22px;
+	font-family: inherit;
+	font-style: italic;
+	font-weight: 700;
+}
 
 .navbar-inverse .navbar-brand{
 	color:#00bcd4;
